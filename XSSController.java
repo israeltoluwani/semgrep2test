@@ -14,3 +14,4 @@ public class XSSController {
     @GetMapping("/hello")
     ResponseEntity<String> hello(@RequestParam(value = "name", defaultValue = "World") String name) {
         return new ResponseEntity<>("Hello World!" + name, HttpStatus.OK);
+    ResultSet rs = c.createStatement().executeQuery(sql);
